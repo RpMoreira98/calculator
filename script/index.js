@@ -4,8 +4,8 @@ const back = document.querySelector('#back');
 const resultValue = document.getElementById('result');
 
 //Event of numbers appearing on the screen.
-button.forEach((e)=>{
-    e.addEventListener('click', ()=> {
+button.forEach((e) => {
+    e.addEventListener('click', () => {
         ((num) => {
             const value = document.getElementById('display');
             value.innerHTML += num;
@@ -14,7 +14,7 @@ button.forEach((e)=>{
 })
 
 //Clear screen event.
-clear.addEventListener('click', ()=> {
+clear.addEventListener('click', () => {
     (() => {
         const display = document.getElementById('display');
         display.innerHTML = '';
@@ -30,15 +30,24 @@ back.addEventListener('click', () => {
 });
 
 
+
 //Calculation event.
-resultValue.addEventListener('click', ()=> {
+resultValue.addEventListener('click', () => {
+
     (() => {
         let result = document.getElementById('display');
         if (result) {
             try {
-                result.innerHTML = eval(display.innerHTML);
+                const resultado = eval(display.innerHTML)
+                if ([Infinity, NaN].includes(resultado)) {
+                    throw new Error('sadasdas');
+                };
+                result.innerHTML = resultado;
             } catch (error) {
                 result.innerHTML = 'ERRO';
+                setTimeout(() => {
+                    result.innerHTML = '0';
+                }, 500)
             }
         };
     })();
