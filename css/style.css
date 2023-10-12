@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #000, #dc143c);
+    overflow: hidden;
+}
+
+#calculadora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    gap: 2rem;
+}
+
+#display {
+    text-align: end;
+    width: 245px;
+    height: 35px;
+    background-color: #fff;
+    color: #000;
+    margin-top: 10px;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.number {
+    width: 50px;
+    height: 50px;
+    background-color: #808080;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    margin: 5px;
+    user-select: none;
+}
+
+.number:hover {
+    background-color: #161616;
+}
+
+/* Adicione estilos para os botões de operações (+, -, *, /) */
+.btn-row button {
+    background-color: #333;
+}
+
+#result {
+    background-color: #f00;
+    color: #fff;
+    grid-row: span 2;
+}
+
+
+.number-one,
+.number-two,
+.number-three {
+    width: 50px;
+    height: 50px;
+    background-color: #808080;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    margin: 5px;
+    user-select: none;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="css/icons8-calculator-96.png" type="image/x-icon">
+    <title>Calculadora - Simples</title>
+</head>
+
+<body>
+    <div id="calculadora">
+        <section>
+            <h1 id="display" value="0"></h1>
+        </section>
+
+        <section class="btn-row">
+            <div class="calc-btn-row">
+                <button class="number-one" id="clear">C</button>
+                <button class="number-two" id="back">&larr;</button>
+                        <button class="number">/</button>
+                        <button class="number">*</button>
+            </div>
+
+            <div class="calc-btn-row">
+                <button class="number">9</button>
+                <button class="number">8</button>
+                <button class="number">7</button>
+                <button class="number">&plus;</button>
+            </div>
+
+            <div class="calc-btn-row">
+                <button class="number">6</button>
+                <button class="number">5</button>
+                <button class="number">4</button>
+                <button class="number">-</button>
+            </div>
+
+            <div class="calc-btn-row">
+                <button class="number">3</button>
+                <button class="number">2</button>
+                <button class="number">1</button>
+                <button class="number">.</button>
+            </div>
+
+            <div class="calc-btn-row">
+                <button rowspan="2" class="number" style="width: 114px;">0</button>
+                <button class="number-three" rowspan="2" id="result" style="width: 114px;">=</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script/index.js"></script>
+</body>
+
+</html>
